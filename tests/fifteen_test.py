@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../tasks/')
 
-from fifteen_del_dublicate import *
+from fifteen_del_two_simmilar import *
 import unittest
 
 class TestRemoveAdjacentDuplicates(unittest.TestCase):
