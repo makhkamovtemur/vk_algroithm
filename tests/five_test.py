@@ -12,7 +12,7 @@ class TestMoveZerosToEnd(unittest.TestCase):
         self.assertEqual(move_zeros_to_end([0, 0, 0, 0]), [0, 0, 0, 0])
 
     def test_no_zeros(self):
-        self.assertEqual(move_zeros_to_end([1, 2, 3, 4]), [1, 2, 3, 4])
+        self.assertEqual(move_zeros_to_end([0, 1, 2, 3, 4, 0]), [1, 2, 3, 4, 0, 0])
 
     def test_empty_array(self):
         self.assertEqual(move_zeros_to_end([]), [])

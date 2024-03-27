@@ -1,13 +1,10 @@
 def is_palindrome_stack(s):
-    # Приведение строки к нижнему регистру и удаление небуквенных символов
     cleaned = "".join([c.lower() for c in s if c.isalnum()])
     stack = []
-
-    # Заполнение стека
     for char in cleaned:
         stack.append(char)
 
-    # Проверка на палиндром с использованием стека
+    # палиндром с использованием стека
     for char in cleaned:
         if stack.pop() != char:
             return False
